@@ -1,0 +1,16 @@
+@use '@/assets/styles/abstract/colors' as colors;
+
+body {
+  background: radial-gradient(colors.$color-cape-cod, colors.$color-outer-space);
+  /* min-height: 100vh; */
+}
+
+header {
+  margin: 3rem auto;
+
+  & img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+  }
+}

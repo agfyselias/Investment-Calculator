@@ -1,0 +1,21 @@
+@use '@/assets/styles/abstract/colors' as colors;
+@use '@/assets/styles/abstract/fonts' as fonts;
+
+.log {
+  margin: 2rem auto;
+  padding: 1rem;
+  table-layout: fixed;
+  border-spacing: 1rem;
+  text-align: right;
+  
+  & thead {
+    font-size: fonts.$font-size-sm;
+    color: colors.$color-riptide;
+  }
+
+  & tbody {
+    font-family: fonts.$font-family-secondary;
+    font-size: fonts.$font-size-md;
+    color: colors.$color-jagged-ice;
+  }
+}

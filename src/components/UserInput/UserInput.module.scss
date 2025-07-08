@@ -1,0 +1,36 @@
+@use '@/assets/styles/abstract/colors' as colors;
+@use '@/assets/styles/abstract/fonts' as fonts;
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 4px;
+  background: linear-gradient(180deg, colors.$color-paradiso, colors.$color-eucalyptus);
+
+  &__input-group {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  & label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-family: fonts.$font-family-secondary;;
+    font-size: fonts.$font-size-xs;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  & input {
+    width: auto;
+    padding: 0.5rem;
+    border: 1px solid colors.$color-neptune;
+    border-radius: 0.25rem;
+    color: colors.$color-jagged-ice;
+    font-size: fonts.$font-size-lg;
+  }
+}

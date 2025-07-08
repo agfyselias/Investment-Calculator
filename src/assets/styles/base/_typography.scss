@@ -1,0 +1,16 @@
+@use '@/assets/styles/abstract/colors' as colors;
+@use '@/assets/styles/abstract/fonts' as fonts;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+body {
+  font-family: fonts.$font-family-primary;
+  color: colors.$color-auqa-haze;
+}
+
+header {
+  text-align: center;
+
+  & h1 {
+    font-size: fonts.$font-size-xl;
+  }
+}
